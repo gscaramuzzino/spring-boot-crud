@@ -1,4 +1,4 @@
-package com.giusescara.tutorial.springbootcrud;
+package com.giusescara.tutorial.springbootcrud.repository;
 
 import com.giusescara.tutorial.springbootcrud.model.EmployeeEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
