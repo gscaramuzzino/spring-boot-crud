@@ -30,7 +30,7 @@ public class EmployeeService {
 
     public EmployeeEntity createOrUpdateEmployee(EmployeeEntity entity) throws RecordNotFoundException {
         Optional<EmployeeEntity> employee = repository.findById(entity.getId());
-        if (employee.isPresent()) {
+        if (!employee.isPresent()) {
             EmployeeEntity newEntity = employee.get();
             newEntity.setEmail(entity.getEmail());
             newEntity.setFirstName(entity.getFirstName());
